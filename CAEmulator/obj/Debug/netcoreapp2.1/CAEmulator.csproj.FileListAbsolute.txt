@@ -1,0 +1,14 @@
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CAEmulator.deps.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CAEmulator.runtimeconfig.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CAEmulator.runtimeconfig.dev.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CAEmulator.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CAEmulator.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.csprojAssemblyReference.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.csproj.CoreCompileInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.AssemblyInfoInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.AssemblyInfo.cs
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CALibrary.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\bin\Debug\netcoreapp2.1\CALibrary.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAEmulator\obj\Debug\netcoreapp2.1\CAEmulator.csproj.CopyComplete

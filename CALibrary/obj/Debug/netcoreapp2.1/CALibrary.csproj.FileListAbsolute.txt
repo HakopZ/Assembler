@@ -1,0 +1,9 @@
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\bin\Debug\netcoreapp2.1\CALibrary.deps.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\bin\Debug\netcoreapp2.1\CALibrary.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\bin\Debug\netcoreapp2.1\CALibrary.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.csprojAssemblyReference.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.csproj.CoreCompileInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.AssemblyInfoInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.AssemblyInfo.cs
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CALibrary\obj\Debug\netcoreapp2.1\CALibrary.pdb

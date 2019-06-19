@@ -1,0 +1,15 @@
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CAAssembler.deps.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CAAssembler.runtimeconfig.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CAAssembler.runtimeconfig.dev.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CAAssembler.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CAAssembler.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CALibrary.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\CALibrary.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.csprojAssemblyReference.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.csproj.CoreCompileInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.AssemblyInfoInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.AssemblyInfo.cs
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.csproj.CopyComplete
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\obj\Debug\netcoreapp2.1\CAAssembler.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CAAssembler\bin\Debug\netcoreapp2.1\MyProgram.txt

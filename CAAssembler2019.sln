@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAAssembler", "CAAssembler\CAAssembler.csproj", "{239FA9A9-B4AA-4207-B033-32D510468323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CALibrary", "CALibrary\CALibrary.csproj", "{8C8C7DF9-3EE8-4118-9DED-B8FB1AC6430A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADisassembler", "CADisassembler\CADisassembler.csproj", "{980E6DE2-B621-478A-8A93-D784E9BFB1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAEmulator", "CAEmulator\CAEmulator.csproj", "{D8335DAC-C83E-4DE3-BF2A-E78012778AA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239FA9A9-B4AA-4207-B033-32D510468323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239FA9A9-B4AA-4207-B033-32D510468323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239FA9A9-B4AA-4207-B033-32D510468323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239FA9A9-B4AA-4207-B033-32D510468323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8C7DF9-3EE8-4118-9DED-B8FB1AC6430A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8C7DF9-3EE8-4118-9DED-B8FB1AC6430A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8C7DF9-3EE8-4118-9DED-B8FB1AC6430A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8C7DF9-3EE8-4118-9DED-B8FB1AC6430A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980E6DE2-B621-478A-8A93-D784E9BFB1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980E6DE2-B621-478A-8A93-D784E9BFB1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980E6DE2-B621-478A-8A93-D784E9BFB1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980E6DE2-B621-478A-8A93-D784E9BFB1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8335DAC-C83E-4DE3-BF2A-E78012778AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8335DAC-C83E-4DE3-BF2A-E78012778AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8335DAC-C83E-4DE3-BF2A-E78012778AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8335DAC-C83E-4DE3-BF2A-E78012778AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CC43782-6C2C-4641-BC0A-A2F0191BA802}
+	EndGlobalSection
+EndGlobal

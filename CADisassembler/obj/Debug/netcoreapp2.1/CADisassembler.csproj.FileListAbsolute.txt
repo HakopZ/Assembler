@@ -1,0 +1,10 @@
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\bin\Debug\netcoreapp2.1\CADisassembler.deps.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\bin\Debug\netcoreapp2.1\CADisassembler.runtimeconfig.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\bin\Debug\netcoreapp2.1\CADisassembler.runtimeconfig.dev.json
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\bin\Debug\netcoreapp2.1\CADisassembler.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\bin\Debug\netcoreapp2.1\CADisassembler.pdb
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\obj\Debug\netcoreapp2.1\CADisassembler.csproj.CoreCompileInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\obj\Debug\netcoreapp2.1\CADisassembler.AssemblyInfoInputs.cache
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\obj\Debug\netcoreapp2.1\CADisassembler.AssemblyInfo.cs
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\obj\Debug\netcoreapp2.1\CADisassembler.dll
+D:\AssemblyCodeInVSCODE\CAAssembler\CADisassembler\obj\Debug\netcoreapp2.1\CADisassembler.pdb

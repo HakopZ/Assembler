@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CAAssembler\\CAAssembler.csproj": {}
+  },
+  "projects": {
+    "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CAAssembler\\CAAssembler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CAAssembler\\CAAssembler.csproj",
+        "projectName": "CAAssembler",
+        "projectPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CAAssembler\\CAAssembler.csproj",
+        "packagesPath": "C:\\Users\\hakop\\.nuget\\packages\\",
+        "outputPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CAAssembler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hakop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj": {
+                "projectPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj",
+        "projectName": "CALibrary",
+        "projectPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj",
+        "packagesPath": "C:\\Users\\hakop\\.nuget\\packages\\",
+        "outputPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hakop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
