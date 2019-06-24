@@ -7,8 +7,8 @@ namespace CAEmulator
 {
     class MMIO
     {
-        Memory<byte> mmioAddr;
-        Random rand = new Random();
+        readonly Memory<byte> mmioAddr;
+        readonly Random rand = new Random();
 
 
         public MMIO(byte[] fullAddr)
@@ -21,16 +21,17 @@ namespace CAEmulator
             //WRCHR 8 9 maybe 
             //RDCHR 20 21
             //RdChrFlg 22 23
+
             if (mmioShort[10 / 2] != 0)
             {
                 Console.Write((char)mmioShort[8 / 2]);
-                if(mmioShort[8/2] == 13)
+                if(mmioShort[20/2] == 13)
                 {
                     Console.WriteLine();
                 }
                 mmioShort[10 / 2] = 0;
             }
-            if (mmioShort[22 / 2] == 0 && Console.KeyAvailable)
+            if (Console.KeyAvailable && mmioShort[22 / 2] == 0)
             {
                 
                 mmioShort[22 / 2] = 1;
@@ -47,6 +48,7 @@ namespace CAEmulator
             //Wrint 12 13
             //ReadInt 16 17
             //ReadIntFlag 18 19
+
             if (mmioShort[14 / 2] != 0)
             {
                 Console.Write(mmioShort[12 / 2]);
@@ -54,14 +56,13 @@ namespace CAEmulator
             }
             
         }
+
+  
         public void Update()
         {
             Span<byte> mmio = mmioAddr.Span;
             Span<ushort> mmioShort = MemoryMarshal.Cast<byte, ushort>(mmio);
             rand.NextBytes(mmio.Slice(4, 2)); //Random is 4
-
-       
-         
            
             CharFunctions(mmioShort);
             IntFunctions(mmioShort);

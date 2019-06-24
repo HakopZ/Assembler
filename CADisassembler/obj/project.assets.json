@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CALibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/CALibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CALibrary.dll": {}
+        }
       }
     }
   },
@@ -680,10 +690,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CALibrary/1.0.0": {
+      "type": "project",
+      "path": "../CALibrary/CALibrary.csproj",
+      "msbuildProject": "../CALibrary/CALibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CALibrary >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -716,7 +732,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj": {
+              "projectPath": "D:\\AssemblyCodeInVSCODE\\CAAssembler\\CALibrary\\CALibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

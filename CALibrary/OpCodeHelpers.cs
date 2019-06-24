@@ -46,7 +46,10 @@ namespace CALibrary
             [OpCodes.Sti] = OpCodeTypes.TwoRegOneOffset,
             [OpCodes.Call] = OpCodeTypes.OneAddr,
             [OpCodes.Ret] = OpCodeTypes.NoArgs,
+            [OpCodes.Calli] = OpCodeTypes.OneReg,
+            [OpCodes.Jmpi] = OpCodeTypes.OneReg,
             [OpCodes.Brk] = OpCodeTypes.NoArgs
+
         };
     }
 }

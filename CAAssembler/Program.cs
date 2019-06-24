@@ -71,6 +71,7 @@ namespace CAAssembler
             {
                 binary.Add((byte)(addr >> 8 & 0x0FF));
                 binary.Add((byte)(addr & 0x0FF));
+                
             }
             else
             {
@@ -90,8 +91,90 @@ namespace CAAssembler
             }
             else { binary.Add(0); }
         }
+        static List<short> C(string x)
+        {
+            List<short> temp = new List<short>();
+            string tem = "";
+            for (int i = 0; i <= x.Length; i++)
+            {
+                if(i == x.Length || x[i] == ' ')
+                {
+                    temp.Add(short.Parse(tem));
+                    tem = "";
+                }
+                else
+                {
+                    tem += x[i];
+                }
+            }
+            return temp;
+        }
+        static void ArrayHan(ReadOnlySpan<char> instr, List<byte> binary)
+        {
+
+            binary.Add(180);
+            binary.Add(0);
+            List<short> stuff = C(instr.ToString());
+            binary.Add((byte)(stuff.Count & 0xFF));
+            binary.Add((byte)(stuff.Count >> 8));
+
+
+
+            foreach (var item in stuff)
+            {
+                binary.Add((byte)(item & 0xFF));
+                binary.Add((byte)(item >> 8));
+             
+               
+            }
+            int align = stuff.Count * 2 % 4;
+            align = 4 - align;
+            for (int i = 0; i < align; i++)
+            {
+                binary.Add(0);
+            }
+        }
+        static void StringHan(ReadOnlySpan<char> instr, List<byte> binary)
+        {
+            binary.Add(175);
+            binary.Add(0);
+            binary.Add((byte)(instr.Length & 0xFF));
+            binary.Add((byte)(instr.Length >> 8));
+     
+  
+
+            for (int i = 0; i < instr.Length; i++)
+            {
+   
+                binary.Add((byte)(instr[i] & 0xFF));
+                binary.Add((byte)(instr[i] >> 8));
+            }
+            binary.Add(0);
+            int align = (instr.Length * 2 + 1)  % 4;
+            align = 4 - align;
+            for (int i = 0; i < align; i++)
+            {
+                binary.Add(0);
+            }
+        }
         static void ParseInstruction(ReadOnlySpan<char> instruction, List<byte> binary, Dictionary<int, string> labelReplacements)
         {
+
+            if (instruction.IndexOf('"') >= 0)
+            {
+                instruction = instruction.Slice(1, instruction.Length - 1);
+                instruction = instruction.Slice(0, instruction.IndexOf('"'));
+                StringHan(instruction, binary);
+                return;
+            }
+            if(instruction.IndexOf('[') >= 0)
+            {
+                instruction = instruction.Slice(1, instruction.Length - 1);
+                instruction = instruction.Slice(0, instruction.IndexOf(']'));
+                ArrayHan(instruction, binary);
+                return;
+
+            }
             int firstSpace = instruction.IndexOf(' ');
            
             if (firstSpace < 0)
@@ -135,7 +218,7 @@ namespace CAAssembler
         }
         static void Main(string[] args)
         {
-            //for Assembler, and dissasembler
+     
             string[] lines = File.ReadAllLines("MyProgram.txt");
 
 
@@ -184,8 +267,6 @@ namespace CAAssembler
             var docsFold = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             var outputFile = Path.Combine(docsFold, "asmBinaries", "Binary.bin");
             File.WriteAllBytes(outputFile, binary.ToArray());
-             Console.WriteLine("Hello World!");
-            Console.ReadKey();
         }
     }
 }

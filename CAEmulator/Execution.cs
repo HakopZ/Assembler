@@ -8,8 +8,7 @@ namespace CAEmulator
     class Execution 
     {
         readonly MemoryHandler memoryHandler;
-        readonly Registers Registers;
-        
+        readonly Registers Registers;   
         public Execution(MemoryHandler x, Registers Registers)
         {
             this.Registers = Registers;
@@ -23,7 +22,7 @@ namespace CAEmulator
                 case OpCodes.Nop:
                     break;
                 case OpCodes.Brk:
-                   break;
+                    break;
                 case OpCodes.Ret:
                     Registers[31] = Registers[28];
                     break;
@@ -35,10 +34,11 @@ namespace CAEmulator
             switch(x)
             {
                 case OpCodes.Ldi:
-                    Registers[RegOne] = memoryHandler.Ram[Registers[RegTwo] + offset];
+                    
+                    Registers[RegOne] = memoryHandler.Ram[(Registers[RegTwo] + (sbyte)offset) / 2];
                     break;
                 case OpCodes.Sti:
-                    memoryHandler.Ram[Registers[RegTwo] + offset] = Registers[RegOne]; 
+                    memoryHandler.Ram[(Registers[RegTwo] + (sbyte)offset) / 2] = Registers[RegOne]; 
                     break;
             }
         }
@@ -52,7 +52,7 @@ namespace CAEmulator
                     {
                         throw new Exception("not alligned");
                     }
-                    Registers[30]-= 2;
+                    Registers[30] -= 2;
                     memoryHandler.Ram[Registers[30] / 2] = Registers[Reg];
                     break;
                 case OpCodes.Pop:
@@ -63,6 +63,10 @@ namespace CAEmulator
                     Registers[Reg] = memoryHandler.Ram[Registers[30] / 2];
                     Registers[30] += 2;
                     break;
+                case OpCodes.Calli:
+                    Registers[28] = Registers[31];
+                    Registers[31] = Registers[Reg];
+                    break;
             }
         }
         public void OneAddress(int opCode, ushort addr)
@@ -72,7 +76,7 @@ namespace CAEmulator
             {
                 case OpCodes.PSC:
                     Registers[30]--;
-                    memoryHandler.Ram[Registers[30]] = addr;
+                    memoryHandler.Ram[(Registers[30]) / 2] = addr;
                     break;
                 case OpCodes.Jmp:
                     Registers[31] = addr;
@@ -161,6 +165,9 @@ namespace CAEmulator
                 case OpCodes.Shr:
                     Registers[output] = (ushort)(Registers[FirReg] >> Registers[SecReg]);
                     break;
+                case OpCodes.Sar:
+                    Registers[output] = (ushort)((short)Registers[FirReg] >> (short)Registers[SecReg]);
+                    break;
                 case OpCodes.GT:
                     Registers[output] = Registers.GreaterThan(FirReg, SecReg);
                     break;
@@ -171,4 +178,4 @@ namespace CAEmulator
         }
     }
    
-}
+}   

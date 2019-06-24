@@ -12,11 +12,14 @@ namespace CAEmulator
         {
             this.AddressSpace = AddressSpace;
         }
-        public Span<ushort> Ram => MemoryMarshal.Cast<byte, ushort>(AddressSpace.AsSpan().Slice(0, 0x8000));
 
+        public Span<ushort> Ram => MemoryMarshal.Cast<byte, ushort>(AddressSpace.AsSpan());
+        public Span<sbyte> BRam => MemoryMarshal.Cast<ushort, sbyte>(Ram);
+        public Span<byte> Memory => AddressSpace;
         public Span<byte> ByteInstructionSpace => AddressSpace.AsSpan().Slice(0x8000);
         public Span<uint> UintInstructionSpace => MemoryMarshal.Cast<byte, uint>(ByteInstructionSpace);
      
+        
 
     }
 }

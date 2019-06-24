@@ -1,118 +1,37 @@
-﻿FIB:
-begin:
-nop
+﻿set r0 W  // start
+set r3 4
+add r0 r0 r3
+ldi r1 r0 -2 //end 
+set r4 2
+mlp r5 r1 r4
+add r1 r0 r5
+set r2 PrintResult
 
-set r1 13
-str r1 8
-str r1 10
+call Foreach
+brk
+self: jmp self
 
-call ReadInt
-mov r3 r29
-set r0 0
-set r2 1
-loop:
-eq r4 r0 r3
-jnz r4 begin
+Foreach:
+eq r3 r0 r1
+JZ r3 co
+ret
+co:
 push r0
-push r2
-push r3
-call Fib
-mov r0 r29
+ldi r0 r0
+push r1
+push r28
 call PrintResult
-set r0 44
-str r0 8
-str r0 10
-pop r3
-pop r2
-pop r0
-add r0 r0 r2
-jmp loop
-
-Fib:
-//return Fib(n-2) + Fib(n - 1)
-set r1 2
-lt r1 r0 r1
-jz r1 recur
-mov r29 r0
-ret
-recur:
-push r28
-set r1 1
-sub r0 r0 r1
-push r0
-call Fib
-pop r0
-push r29
-set r1 1
-sub r0 r0 r1
-call Fib
-pop r0
-add r29 r0 r29
 pop r28
-ret
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ReadInt:
-set r2 0
-start:
-push r2
-push r28
-call ReadChar
-pop r28
-pop r2
-set r0 13
-EQ r0 r29 r0
-jz r0 notDone
-mov r29 r2
-ret
-notDone:
-set r0 8
-eq r0 r29 r0
-jnz r0 backspace
-set r0 48
-sub r0 r29 r0
-set r3 10
-mlp r2 r2 r3
-add r2 r2 r0
-jmp start
-backspace:
-set r0 10
-div r2 r2 r0
-jmp start
-
-ReadChar:
-ldr r0 22
-jz r0 ReadChar
-ldr r1 20
-set r0 0
-str r0 22
-mov r29 r1
-ret 
-
+pop r1
+pop r0
+set r4 2
+add r0 r0 r4
+jmp Foreach
 
 PrintResult:
-str r0 12
+str r0 8
 set r1 1
-str r1 14
-brk
+str r1 10
 ret
+W: "EZMONEY"
+

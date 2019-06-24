@@ -38,6 +38,8 @@ namespace CALibrary
         JZ  = 32,
         Call = 33, 
         Ret = 34,
+        Jmpi = 35,
+        Calli = 36,
         Brk = 39
     }
 

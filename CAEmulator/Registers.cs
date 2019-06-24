@@ -6,7 +6,7 @@ namespace CAEmulator
 {
     class Registers
     {
-        private ushort[] registers = new ushort[32];
+        readonly private ushort[] registers = new ushort[32];
 
         public ref ushort PC => ref registers[31];
 

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "CADisassembler/1.0.0": {
+        "dependencies": {
+          "CALibrary": "1.0.0"
+        },
         "runtime": {
           "CADisassembler.dll": {}
+        }
+      },
+      "CALibrary/1.0.0": {
+        "runtime": {
+          "CALibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CADisassembler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CALibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
